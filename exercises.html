@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Exercises Implementation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 pb-20">
+  <div class="max-w-5xl mx-auto p-10 space-y-32">
+    <header class="text-center">
+      <h1 class="text-5xl font-extrabold text-blue-600 mb-4">Tailwind CSS Exercises</h1>
+    </header>
+
+    <!-- LEVEL 1: Easy -->
+    <div class="space-y-20">
+
+      <!-- Exercise 1: Typography & Spacing -->
+      <section id="ex-1">
+        <h3 class="text-2xl font-bold mb-4">1. Typography & Spacing</h3>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200 space-y-4">
+          <h1 class="text-4xl font-bold">Main Heading Title</h1>
+          <h2 class="text-xl font-semibold">Subheading Subtitle</h2>
+          <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="leading-relaxed">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+
+      <!-- Exercise 2: Colorful Alert Boxes -->
+      <section id="ex-2">
+        <h3 class="text-2xl font-bold mb-4">2. Colorful Alert Boxes</h3>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200 space-y-4">
+          <div class="bg-green-100 border border-green-400 text-green-700 p-4 rounded-lg">
+            <span class="font-bold">Success:</span> This is a successful message.
+          </div>
+          <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 p-4 rounded-lg">
+            <span class="font-bold">Warning:</span> Please be careful with this action.
+          </div>
+          <div class="bg-red-100 border border-red-400 text-red-700 p-4 rounded-lg">
+            <span class="font-bold">Danger:</span> Something went wrong!
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 3: Simple Card with Shadow -->
+      <section id="ex-3">
+        <h3 class="text-2xl font-bold mb-4">3. Simple Card with Shadow</h3>
+        <div class="p-6 bg-gray-100 rounded-xl">
+          <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h4 class="text-xl font-bold mb-2">Beautiful Destination</h4>
+              <p class="text-gray-600 mb-4">Discover the amazing landscapes and vibrant cultures of this unique place on Earth.</p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 4: Circular Profile Badge -->
+      <section id="ex-4">
+        <h3 class="text-2xl font-bold mb-4">4. Circular Profile Badge</h3>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+          <div class="flex items-center gap-4">
+            <img src="https://placehold.co/150" alt="Profile" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h5 class="font-bold text-lg">John Doe</h5>
+              <p class="text-gray-500 text-sm">Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 5: Interactive Buttons -->
+      <section id="ex-5">
+        <h3 class="text-2xl font-bold mb-4">5. Interactive Buttons</h3>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-wrap gap-4">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-colors duration-300 focus:ring-2 focus:ring-blue-300">
+            Primary
+          </button>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded transition-colors duration-300 focus:ring-2 focus:ring-gray-300">
+            Secondary
+          </button>
+          <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-2 px-6 rounded transition-colors duration-300 focus:ring-2 focus:ring-blue-300">
+            Outline
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- LEVEL 2: Intermediate -->
+    <div class="space-y-20">
+
+      <!-- Exercise 6: Responsive Two-Column Layout -->
+      <section id="ex-6">
+        <h3 class="text-2xl font-bold mb-4">6. Responsive Two-Column Layout</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+          <div class="space-y-4">
+            <h4 class="text-2xl font-bold">Responsive Design</h4>
+            <p class="text-gray-600">This layout stacks on mobile devices and expands to two columns on medium screens and above. Tailwind makes this extremely easy with responsive prefixes like <code class="bg-gray-100 px-1 rounded">md:</code>.</p>
+          </div>
+          <div class="bg-blue-100 rounded-lg h-64 flex items-center justify-center">
+            <span class="text-blue-500 font-bold">Image Placeholder</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 7: Product Grid (3-Columns) -->
+      <section id="ex-7">
+        <h3 class="text-2xl font-bold mb-4">7. Product Grid (3-Columns)</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Product Card 1 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+          <!-- Product Card 6 -->
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+            <div class="bg-gray-200 h-40 rounded-lg mb-4"></div>
+            <h5 class="font-bold">Product Name</h5>
+            <p class="text-blue-600 font-semibold">$99.00</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 8: Hero Section with Overlay -->
+      <section id="ex-8">
+        <h3 class="text-2xl font-bold mb-4">8. Hero Section with Overlay</h3>
+        <div class="relative h-[400px] rounded-2xl overflow-hidden bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000')] bg-cover bg-center">
+          <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-6">
+            <h4 class="text-4xl md:text-6xl font-bold text-white mb-4">Explore the Wilderness</h4>
+            <p class="text-gray-200 max-w-lg mb-8">Adventure awaits those who dare to step outside their comfort zone and into the unknown.</p>
+            <button class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition">Get Started</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 9: Pricing Table Comparison -->
+      <section id="ex-9">
+        <h3 class="text-2xl font-bold mb-4">9. Pricing Table Comparison</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <!-- Basic -->
+          <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 text-center">
+            <h5 class="text-lg font-bold text-gray-500 mb-2">Basic</h5>
+            <p class="text-4xl font-extrabold mb-6">190kr</p>
+            <ul class="text-gray-600 space-y-3 mb-8">
+              <li>5 Projects</li>
+              <li>10GB Storage</li>
+              <li>Basic Support</li>
+            </ul>
+            <button class="w-full py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50 transition">Choose Plan</button>
+          </div>
+          <!-- Pro (Featured) -->
+          <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-blue-500 text-center scale-105 relative z-10">
+            <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</span>
+            <h5 class="text-lg font-bold text-blue-500 mb-2">Pro</h5>
+            <p class="text-4xl font-extrabold mb-6">490kr</p>
+            <ul class="text-gray-600 space-y-3 mb-8">
+              <li>Unlimited Projects</li>
+              <li>100GB Storage</li>
+              <li>Priority Support</li>
+            </ul>
+            <button class="w-full py-3 rounded-lg bg-blue-600 text-white font-bold hover:bg-blue-700 transition">Choose Plan</button>
+          </div>
+          <!-- Enterprise -->
+          <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 text-center">
+            <h5 class="text-lg font-bold text-gray-500 mb-2">Enterprise</h5>
+            <p class="text-4xl font-extrabold mb-6">990kr</p>
+            <ul class="text-gray-600 space-y-3 mb-8">
+              <li>Custom Solutions</li>
+              <li>Unlimited Storage</li>
+              <li>24/7 Support</li>
+            </ul>
+            <button class="w-full py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50 transition">Choose Plan</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 10: Simple Navigation Bar -->
+      <section id="ex-10">
+        <h3 class="text-2xl font-bold mb-4">10. Simple Navigation Bar</h3>
+        <div class="relative h-64 bg-gray-200 rounded-xl overflow-auto border border-gray-300">
+          <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-200 px-6 py-4 flex justify-between items-center z-20">
+            <div class="font-bold text-2xl text-blue-600">LOGO</div>
+            <div class="hidden md:flex gap-6">
+              <a href="#" class="font-medium hover:text-blue-500 transition">Home</a>
+              <a href="#" class="font-medium hover:text-blue-500 transition">About</a>
+              <a href="#" class="font-medium hover:text-blue-500 transition">Services</a>
+              <a href="#" class="font-medium hover:text-blue-500 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+              <button class="p-2 bg-gray-100 rounded">Menu</button>
+            </div>
+          </nav>
+          <div class="p-10 space-y-4">
+            <p>Scroll down to see the sticky effect...</p>
+            <div class="h-40 bg-gray-100 rounded"></div>
+            <div class="h-40 bg-gray-100 rounded"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LEVEL 3: Tricky -->
+    <div class="space-y-20">
+
+      <!-- Exercise 11: Custom Flexbox Alignment -->
+      <section id="ex-11">
+        <h3 class="text-2xl font-bold mb-4">11. Custom Flexbox Alignment</h3>
+        <div class="space-y-8 p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+          <div>
+            <p class="text-sm font-bold text-gray-500 mb-2 uppercase">Centered both ways</p>
+            <div class="flex justify-center items-center h-32 bg-gray-100 rounded-lg gap-4">
+              <div class="w-10 h-10 bg-blue-500 rounded"></div>
+              <div class="w-10 h-10 bg-blue-500 rounded"></div>
+              <div class="w-10 h-10 bg-blue-500 rounded"></div>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-gray-500 mb-2 uppercase">Space between</p>
+            <div class="flex justify-between items-center h-32 bg-gray-100 rounded-lg px-4">
+              <div class="w-10 h-10 bg-green-500 rounded"></div>
+              <div class="w-10 h-10 bg-green-500 rounded"></div>
+              <div class="w-10 h-10 bg-green-500 rounded"></div>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-gray-500 mb-2 uppercase">Bottom Right</p>
+            <div class="flex justify-end items-end h-32 bg-gray-100 rounded-lg p-4 gap-4">
+              <div class="w-10 h-10 bg-red-500 rounded"></div>
+              <div class="w-10 h-10 bg-red-500 rounded"></div>
+              <div class="w-10 h-10 bg-red-500 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 12: Feature List with Icons -->
+      <section id="ex-12">
+        <h3 class="text-2xl font-bold mb-4">12. Feature List with Icons</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Feature Item -->
+          <div class="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+              <span class="text-blue-600 text-xl font-bold">🚀</span>
+            </div>
+            <h5 class="font-bold text-lg mb-2">Fast Performance</h5>
+            <p class="text-gray-600 text-sm">Optimized for speed and efficiency across all devices.</p>
+          </div>
+          <!-- Feature Item -->
+          <div class="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+              <span class="text-green-600 text-xl font-bold">🔒</span>
+            </div>
+            <h5 class="font-bold text-lg mb-2">Secure by Default</h5>
+            <p class="text-gray-600 text-sm">Your data is encrypted and protected at all times.</p>
+          </div>
+          <!-- Feature Item -->
+          <div class="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+              <span class="text-purple-600 text-xl font-bold">🎨</span>
+            </div>
+            <h5 class="font-bold text-lg mb-2">Modern Design</h5>
+            <p class="text-gray-600 text-sm">Beautiful interfaces that delight your users.</p>
+          </div>
+          <!-- Feature Item -->
+          <div class="group p-6 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition duration-300">
+              <span class="text-yellow-600 text-xl font-bold">💬</span>
+            </div>
+            <h5 class="font-bold text-lg mb-2">24/7 Support</h5>
+            <p class="text-gray-600 text-sm">We are here to help you whenever you need us.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 13: Sticky Sidebar Layout -->
+      <section id="ex-13">
+        <h3 class="text-2xl font-bold mb-4">13. Sticky Sidebar Layout</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 bg-gray-100 p-6 rounded-xl border border-gray-200 h-[400px] overflow-auto">
+          <!-- Sidebar -->
+          <aside class="md:col-span-1">
+            <div class="sticky top-0 bg-white p-4 rounded-lg shadow-sm">
+              <h5 class="font-bold mb-4">Categories</h5>
+              <ul class="space-y-2 text-blue-600 font-medium">
+                <li><a href="#" class="hover:underline">Electronics</a></li>
+                <li><a href="#" class="hover:underline">Fashion</a></li>
+                <li><a href="#" class="hover:underline">Home & Garden</a></li>
+                <li><a href="#" class="hover:underline">Books</a></li>
+              </ul>
+            </div>
+          </aside>
+          <!-- Main Content -->
+          <main class="md:col-span-3 space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm h-64">
+              <h5 class="font-bold mb-2">Main Content Area</h5>
+              <p class="text-gray-600">Scroll this container to see the sidebar stay fixed.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm h-64"></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm h-64"></div>
+          </main>
+        </div>
+      </section>
+
+      <!-- Exercise 14: Gallery with Aspect Ratios -->
+      <section id="ex-14">
+        <h3 class="text-2xl font-bold mb-4">14. Gallery with Aspect Ratios</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="col-span-2 md:col-span-2 aspect-video">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800" alt="Landscape" class="w-full h-full object-cover rounded-xl shadow-sm">
+          </div>
+          <div class="aspect-square">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=400" alt="Mountain" class="w-full h-full object-cover rounded-xl shadow-sm">
+          </div>
+          <div class="aspect-square">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=400" alt="Forest" class="w-full h-full object-cover rounded-xl shadow-sm">
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 15: Responsive Order Change -->
+      <section id="ex-15">
+        <h3 class="text-2xl font-bold mb-4">15. Responsive Order Change</h3>
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+          <!-- This block is second in HTML but will be on right on desktop, top on mobile -->
+          <div class="w-full md:w-1/2">
+            <div class="bg-blue-500 h-48 rounded-xl flex items-center justify-center text-white font-bold text-2xl">
+              [Image Block]
+            </div>
+          </div>
+          <!-- This block is first in HTML but will be on left on desktop, bottom on mobile -->
+          <div class="w-full md:w-1/2 space-y-4">
+            <h4 class="text-2xl font-bold">Content Block</h4>
+            <p class="text-gray-600">On mobile, the blue image block appears FIRST. On desktop, it appears on the RIGHT. This is achieved using <code class="bg-gray-100 px-1 rounded">flex-col md:flex-row-reverse</code>.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LEVEL 4: Advanced -->
+    <div class="space-y-20">
+      <h2 class="text-3xl font-bold border-b-2 border-blue-200 pb-2">Optional Tasks</h2>
+
+      <!-- Exercise 16: Group-Hover Reveal -->
+      <section id="ex-16">
+        <h3 class="text-2xl font-bold mb-4">16. Group-Hover Reveal</h3>
+        <div class="max-w-sm mx-auto group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="Product" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-300"></div>
+          <button class="absolute bottom-0 left-0 right-0 bg-blue-600 text-white py-4 font-bold translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            Add to Cart
+          </button>
+        </div>
+      </section>
+
+      <!-- Exercise 17: Peer-State Toggle -->
+      <section id="ex-17">
+        <h3 class="text-2xl font-bold mb-4">17. Peer-State Toggle (Pure CSS)</h3>
+        <div class="p-8 bg-white rounded-xl shadow-sm border border-gray-200 max-w-md mx-auto">
+          <label class="flex items-center gap-3 cursor-pointer mb-6">
+            <input type="checkbox" class="peer w-5 h-5 accent-blue-600">
+            <span class="text-gray-700 peer-checked:text-blue-600 peer-checked:font-bold transition">I agree to the Terms and Conditions</span>
+          </label>
+          <button class="w-full py-3 bg-gray-300 text-gray-500 font-bold rounded-lg pointer-events-none opacity-50 peer-checked:bg-green-600 peer-checked:text-white peer-checked:pointer-events-auto peer-checked:opacity-100 transition duration-300">
+            Submit Application
+          </button>
+        </div>
+      </section>
+
+      <!-- Exercise 18: Dark Mode Toggle Simulation -->
+      <section id="ex-18">
+        <h3 class="text-2xl font-bold mb-4">18. Dark Mode Toggle Simulation</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Light Mode Example -->
+          <div class="p-8 bg-white text-slate-900 rounded-xl border border-gray-200 shadow-sm">
+            <h4 class="text-xl font-bold mb-2">Light Mode</h4>
+            <p class="text-slate-600">This is how the component looks in the default light theme.</p>
+          </div>
+          <!-- Dark Mode Example (Simulated with a wrapper class) -->
+          <div class="dark">
+            <div class="p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-white rounded-xl border border-gray-200 dark:border-slate-700 shadow-sm">
+              <h4 class="text-xl font-bold mb-2">Dark Mode</h4>
+              <p class="text-slate-600 dark:text-slate-400">This is how the same component looks when the <code class="bg-slate-800 px-1 rounded">dark</code> class is applied to a parent.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 19: Form Validation UI -->
+      <section id="ex-19">
+        <h3 class="text-2xl font-bold mb-4">19. Form Validation UI</h3>
+        <div class="p-8 bg-white rounded-xl shadow-sm border border-gray-200 max-w-md mx-auto">
+          <div class="space-y-2">
+            <label for="email" class="block font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" 
+                   class="peer w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 invalid:border-red-500 focus:invalid:ring-red-500">
+            <p class="hidden peer-focus:peer-invalid:block text-sm text-red-600 font-medium">
+              Please enter a valid email address.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 20: Full Dashboard Shell -->
+      <section id="ex-20">
+        <h3 class="text-2xl font-bold mb-4">20. Full Dashboard Shell (Skeleton)</h3>
+        <div class="relative h-[500px] border-4 border-dashed border-gray-300 rounded-2xl overflow-hidden bg-gray-100">
+          <!-- Sidebar -->
+          <aside class="hidden md:block absolute left-0 top-0 bottom-0 w-64 bg-slate-900 text-white p-6">
+            <div class="text-2xl font-bold mb-10 text-blue-400">DashBoard</div>
+            <nav class="space-y-4">
+              <div class="bg-slate-800 p-3 rounded-lg">Overview</div>
+              <div class="p-3 text-slate-400 hover:text-white transition">Analytics</div>
+              <div class="p-3 text-slate-400 hover:text-white transition">Settings</div>
+            </nav>
+          </aside>
+          <!-- Main Content -->
+          <div class="md:ml-64 flex flex-col h-full">
+            <header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-8">
+              <span class="font-bold text-gray-700">Page Title</span>
+              <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+            </header>
+            <main class="flex-1 p-8 space-y-6 overflow-auto">
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-white h-32 rounded-xl shadow-sm border border-gray-200"></div>
+                <div class="bg-white h-32 rounded-xl shadow-sm border border-gray-200"></div>
+                <div class="bg-white h-32 rounded-xl shadow-sm border border-gray-200"></div>
+              </div>
+              <div class="bg-white h-64 rounded-xl shadow-sm border border-gray-200"></div>
+            </main>
+          </div>
+          <!-- Bottom Nav (Mobile Only) -->
+          <nav class="md:hidden absolute bottom-0 left-0 right-0 h-16 bg-white border-t border-gray-200 flex items-center justify-around z-30">
+            <span class="text-blue-600 font-bold">🏠</span>
+            <span class="text-gray-400">📊</span>
+            <span class="text-gray-400">⚙️</span>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>
