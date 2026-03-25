@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event App Wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gray-800 text-white fixed top-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <div class="w-6 h-6 bg-gray-500 rounded"></div>
+      <span class="font-semibold">Event App</span>
+    </div>
+
+    <!-- Nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#" class="text-sm">Home</a>
+      <a href="#" class="text-sm">About</a>
+      <a href="#" class="text-sm">Features</a>
+      <a href="#" class="text-sm">Contact</a>
+    </nav>
+
+    <!-- CTA -->
+    <button class="bg-gray-300 text-gray-900 px-4 py-2 rounded-full text-sm">
+      Get Started
+    </button>
+  </div>
+</header>
+
+<main class="pt-24">
+
+  <!-- Hero -->
+  <section class="text-center py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="inline-block bg-gray-300 px-4 py-1 rounded-full text-sm mb-6">
+        STATUS LABEL
+      </div>
+
+      <h1 class="text-5xl font-bold mb-6">
+        Welcome to Event App
+      </h1>
+
+      <p class="text-gray-600 mb-8">
+        Placeholder text describing the platform and its value proposition.
+      </p>
+
+      <div class="flex justify-center gap-4">
+        <button class="bg-gray-700 text-white px-6 py-3 rounded-lg">
+          Create Event
+        </button>
+        <button class="border border-gray-400 px-6 py-3 rounded-lg">
+          Browse Events
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Events -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="flex items-center justify-between mb-10">
+      <div>
+        <div class="text-sm text-gray-500 mb-2">SECTION LABEL</div>
+        <h2 class="text-3xl font-semibold">Featured Events</h2>
+      </div>
+      <button class="text-sm text-gray-600 flex items-center gap-2">
+        View All Events
+        <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+      </button>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card -->
+      <!-- Repeat 6 times -->
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">
+          IMAGE
+        </div>
+
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">
+            Category
+          </div>
+
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>
+            Date & Time
+          </div>
+
+          <h3 class="font-semibold">Event Title</h3>
+
+          <p class="text-sm text-gray-500">Event Location</p>
+
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>
+            100+ Attendees
+          </p>
+
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">
+            View Details
+          </button>
+        </div>
+      </div>
+
+      <!-- Duplicate cards -->
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">IMAGE</div>
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">Category</div>
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>Date & Time
+          </div>
+          <h3 class="font-semibold">Event Title</h3>
+          <p class="text-sm text-gray-500">Event Location</p>
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>100+ Attendees
+          </p>
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">View Details</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">IMAGE</div>
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">Category</div>
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>Date & Time
+          </div>
+          <h3 class="font-semibold">Event Title</h3>
+          <p class="text-sm text-gray-500">Event Location</p>
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>100+ Attendees
+          </p>
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">View Details</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">IMAGE</div>
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">Category</div>
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>Date & Time
+          </div>
+          <h3 class="font-semibold">Event Title</h3>
+          <p class="text-sm text-gray-500">Event Location</p>
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>100+ Attendees
+          </p>
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">View Details</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">IMAGE</div>
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">Category</div>
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>Date & Time
+          </div>
+          <h3 class="font-semibold">Event Title</h3>
+          <p class="text-sm text-gray-500">Event Location</p>
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>100+ Attendees
+          </p>
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">View Details</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="h-40 bg-gray-300 flex items-center justify-center">IMAGE</div>
+        <div class="p-4 space-y-3">
+          <div class="bg-gray-200 text-xs px-2 py-1 rounded w-max">Category</div>
+          <div class="text-sm text-gray-500 flex items-center gap-2">
+            <div class="w-4 h-4 bg-gray-400 rounded"></div>Date & Time
+          </div>
+          <h3 class="font-semibold">Event Title</h3>
+          <p class="text-sm text-gray-500">Event Location</p>
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-gray-500 rounded-full"></span>100+ Attendees
+          </p>
+          <button class="w-full bg-gray-700 text-white py-2 rounded-lg text-sm">View Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 px-6 py-12">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+    <!-- Left -->
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-6 h-6 bg-gray-500 rounded"></div>
+        <span class="font-semibold text-white">Event App</span>
+      </div>
+      <p class="text-sm mb-4">Short description here.</p>
+
+      <div class="flex gap-3">
+        <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+        <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+        <div class="w-6 h-6 bg-gray-500 rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h4 class="text-white mb-3">About</h4>
+      <ul class="space-y-2 text-sm">
+        <li>About</li>
+        <li>Features</li>
+        <li>Team</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white mb-3">Features</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Pricing</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white mb-3">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Contact</li>
+        <li>Support</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-sm flex flex-col md:flex-row justify-between">
+    <span>© 2026 Event App</span>
+    <span>Privacy Policy • info@email.com</span>
+  </div>
+</footer>
+
+</body>
+</html>
